@@ -6,6 +6,12 @@ body {
 .container {
   background: #eee;
   display: grid;
+  /* grid-template:-rows: 80px 80px 80px;
+  grid-template:-columns: 80px 80px 80px; */
+  /* grid-template: 80px 80px 80px / 80px 80px 80px; */
+  /* grid-template: repeat(3, 80px) / repeat(3, 80px); */
+  grid-template: repeat(3, 80px) / repeat(auto-fill, 80px);
+
 }
 .item-1 {
   background: hsl(300, 80%, 30%);
