@@ -5,25 +5,26 @@ body {
 
 .container {
   background: #eee;
+  width: 300px;
+  height: 300px;
   display: grid;
   grid-template-rows: 80px 80px 80px;
   grid-template-columns: 80px 80px 80px;
-  grid-auto-flow: dense column;
-  grid-auto-rows: 80px;
-  grid-auto-columns: 80px;
+  /* justify-content: end;
+  align-content: center; */
+  justify-items: end;
+  align-items: center;
 }
 .item-1 {
   background: hsl(300, 80%, 30%);
+  justify-self: center;
+  align-self: center;
 }
 .item-2 {
   background: hsl(300, 80%, 40%);
-  grid-row: span 2;
-  grid-column: span 1;
 }
 .item-3 {
   background: hsl(300, 80%, 50%);
-  grid-row: span 1;
-  grid-column: span 2;
 }
 .item-4 {
   background: hsl(200, 80%, 30%);
